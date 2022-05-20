@@ -36,15 +36,16 @@
 <script>
 import Display from "../components/DisplayCalcular";
 import Button from "../components/ButtonCalcular";
-import axios from "axios";
+import  somar from "../services/operacoes";
 export default {
   data: function () {
     return {
       displayValue: "0",
       clearDisplay: false,
       operation: null,
-      values: [0, 0],
+      values: [],
       totalGeral: 0,
+      url: "http://localhost:3000",
     };
   },
 
@@ -53,38 +54,41 @@ export default {
     clearMemory() {
       Object.assign(this.$data, this.$options.data());
     },
-    setOperation(operation) {
-      var elementos = [this.totalGeral, this.displayValue];
+
+   async  setOperation(operation) {
+          var elementos = {
+            elementos: [10, 2, 2, 0],
+          };
       var resultado;
-      var url = "http://localhost:3000";
       switch (operation) {
         case "+":
-          url += "/somar";
+          this.url += "/somar";
+          console.log(this.url);
           break;
         case "-":
-          url -= "/subtrair";
+          this.url += "/subtrair";
+          console.log(this.url);
           break;
         case "/":
-          url /= "/dividir";
+          this.url += "/dividir";
           break;
         case "*":
-          url *= "/multiplicacao";
+          this.url += "/multiplicacao";
           break;
         case "%":
-          url %= "/porcentagem";
+          this.url += "/porcentagem";
           break;
         case "=":
-          axios.post(url, elementos).then(function (retorno) {
-            resultado = retorno;
-          });
+         // somar(elementos);
+          console.log( await somar(elementos));
           this.displayValue = resultado;
           this.totalGeral = resultado;
-          console.log(operation);
           break;
       }
     },
     addDigit(n) {
-      console.log(n);
+      this.displayValue = n;
+      console.log(this.values);
     },
   },
 };
