@@ -27,7 +27,9 @@
     <li>Funcionalidade 5:Porcentagem</li>
     <li>Funcionalidade 6: raiz</li>
    </ul>
-  <img align="center"  height="90" width="170" src="https://www.calculadora-online.xyz/imagens/calculadora-online.jpg">
+ 
+
+  <img align="center"  height="160" width="170" src="https://lh3.googleusercontent.com/pw/AM-JKLVM-QQjrh_aQK5hmvexBoTpZor8h9hOBhac4mpTVauZ-EXi05h7qGK5V3w222mB4ku09xFp-M9oGk8ZMduDAXv8QT4y9uqbHmN--tmtQ0bEpBpljT0IbGL36lAldPV8Qj6UGwU-P6j6TvHRetMmJnk=w410-h447-no?authuser=0">
 
 <h1>Tecnologias utilizadas</h1>
 <ul>
