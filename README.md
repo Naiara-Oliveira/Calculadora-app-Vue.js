@@ -1,8 +1,13 @@
 <h1> Descrição do projeto</h1>
 
 <p>Uma escola quer ensinar seus alunos do Ensino Fundamental I a manusear uma calculadora. A professora de matemática está ensinando as seguintes funções: soma, subtração, multiplicação e divisão, porém, no Ensino Fundamental 2 ensinará porcentagem, raiz quadrada, dentre outros cálculos.
-<h3>Site de escola para Inspiração https://www.cre10paranaiba.sed.ms.gov.br/escolas-da-jurisdicao/paranaiba/ee-dr-ermirio-leal-garcia/</h3>
+<h3>Site de escola para Inspiração</h3>
 
+<h4>https://coolors.co/<h4>
+   <p> Crie a paleta perfeita ou inspire-se com milhares de belos esquemas de cores.</p>
+   <h4>https://fonts.google.com/</h4>
+   <p>Google Fonts é uma biblioteca com mais de 800 fontes livres licenciadas.</p>
+   <hr>
 <h2>O passo a passo de como rodar o programa</h2>
 
 <p>1° abrir o terminal e instalar O npm que é o Gerenciador de Pacotes do Node "npm install" ou "yarn install" vai depender do seu gerenciador.npm install</p>
